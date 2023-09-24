@@ -1,0 +1,70 @@
+2023-09-23 23:54:18.693 [smallrye-kafka-producer-thread-0] WARN  org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses:75 Couldn't resolve server prueba:9092 from bootstrap.servers as DNS resolution failed for prueba
+2023-09-23 23:54:18.699 [smallrye-kafka-producer-thread-0] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$2:116 SRMSG18261: Unable to initialize producer from channel sfs.: org.apache.kafka.common.KafkaException: Failed to construct kafka producer
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:471)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:291)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$0(ReactiveKafkaProducer.java:107)
+	at java.base/java.util.concurrent.atomic.AtomicReference.updateAndGet(AtomicReference.java:209)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$1(ReactiveKafkaProducer.java:103)
+	at io.smallrye.context.impl.wrappers.SlowContextualSupplier.get(SlowContextualSupplier.java:21)
+	at io.smallrye.mutiny.operators.uni.builders.UniCreateFromItemSupplier.subscribe(UniCreateFromItemSupplier.java:28)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOnItemConsume.subscribe(UniOnItemConsume.java:30)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:84)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89)
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:445)
+	... 15 more
+
+2023-09-23 23:54:18.702 [Quarkus Main Thread] ERROR io.smallrye.reactive.messaging.providers.impl.ConfiguredChannelFactory.register:153 SRMSG00230: Unable to create the publisher or subscriber during initialization: org.apache.kafka.common.KafkaException: Failed to construct kafka producer
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:471)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:291)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$0(ReactiveKafkaProducer.java:107)
+	at java.base/java.util.concurrent.atomic.AtomicReference.updateAndGet(AtomicReference.java:209)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$1(ReactiveKafkaProducer.java:103)
+	at io.smallrye.context.impl.wrappers.SlowContextualSupplier.get(SlowContextualSupplier.java:21)
+	at io.smallrye.mutiny.operators.uni.builders.UniCreateFromItemSupplier.subscribe(UniCreateFromItemSupplier.java:28)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOnItemConsume.subscribe(UniOnItemConsume.java:30)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:84)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89)
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:445)
+	... 15 more
+
+2023-09-23 23:54:18.718 [Quarkus Main Thread] ERROR io.quarkus.runtime.ApplicationLifecycleManager.run:194 Failed to start application (with profile [dev]): org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89)
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:445)
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:291)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$0(ReactiveKafkaProducer.java:107)
+	at java.base/java.util.concurrent.atomic.AtomicReference.updateAndGet(AtomicReference.java:209)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$new$1(ReactiveKafkaProducer.java:103)
+	at io.smallrye.context.impl.wrappers.SlowContextualSupplier.get(SlowContextualSupplier.java:21)
+	at io.smallrye.mutiny.operators.uni.builders.UniCreateFromItemSupplier.subscribe(UniCreateFromItemSupplier.java:28)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOnItemConsume.subscribe(UniOnItemConsume.java:30)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:84)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:36)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:54:18.722 [main] INFO  io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart:165 Attempting to start live reload endpoint to recover from previous Quarkus startup failure
+2023-09-23 23:55:00.294 [Aesh InputStream Reader] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForFileChange:978 File change detected: /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/resources/application.properties
+2023-09-23 23:55:00.300 [Aesh InputStream Reader] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan:532 Restarting quarkus due to changes in application.properties.

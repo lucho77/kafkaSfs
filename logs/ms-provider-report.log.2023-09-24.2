@@ -1,0 +1,668 @@
+2023-09-24 18:31:42.885 [smallrye-kafka-producer-thread-1] INFO  io.smallrye.reactive.messaging.kafka.impl.KafkaSink.lambda$new$0:84 SRMSG18258: Kafka producer kafka-producer-sfs, connected to Kafka brokers 'localhost:9094', is configured to write records to 'sfs'
+2023-09-24 18:31:42.896 [Quarkus Main Thread] WARN  io.quarkus.kafka.streams.runtime.KafkaStreamsProducer.<init>:80 No Topology producer; Kafka Streams will not be started
+2023-09-24 18:31:42.899 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:106 sfsquarkuskafka 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.16.11.Final) started in 0.681s. Listening on: http://localhost:9331
+2023-09-24 18:31:42.901 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:109 Profile dev activated. Live Coding activated.
+2023-09-24 18:31:42.902 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:111 Installed features: [cache, cdi, kafka-client, kafka-streams, redis-client, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, smallrye-reactive-messaging, smallrye-reactive-messaging-kafka, vertx]
+2023-09-24 18:31:42.903 [pool-1-thread-1] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan:539 Live reload total time: 1.619s 
+2023-09-24 18:33:14.176 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:14.182 [pool-1-thread-1] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForFileChange:978 File change detected: /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/resources/application.properties
+2023-09-24 18:33:14.185 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:17.156 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:17.158 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:20.258 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:20.259 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:20.262 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:23.154 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:23.155 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:23.158 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:26.157 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:26.158 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:26.161 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:29.157 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:29.158 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:29.160 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:32.151 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:32.153 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:32.155 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:35.145 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:35.146 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:35.149 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:38.184 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:38.186 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:38.188 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:41.186 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:41.188 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:41.191 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:44.162 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:44.163 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:44.166 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:47.184 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:47.185 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:47.188 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:50.155 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:50.156 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:50.159 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:53.162 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:53.163 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:53.166 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:56.149 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:56.150 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:56.153 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:33:59.140 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:33:59.141 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:33:59.144 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:02.155 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:02.156 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:02.158 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:05.148 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:05.150 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:05.152 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:08.179 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:08.180 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:08.182 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:11.134 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:11.135 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:11.137 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:14.174 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:14.175 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:14.178 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:17.142 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:17.143 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:17.145 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:19.133 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:19.134 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:19.137 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:22.186 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:22.187 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:22.189 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:25.135 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java
+2023-09-24 18:34:25.136 [pool-1-thread-1] ERROR io.quarkus.deployment.dev.JavaCompilationProvider.lambda$compile$1:103 cannot find symbol
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro, line 6 in /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java
+2023-09-24 18:34:25.139 [pool-1-thread-1] ERROR io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run:46 Failed to redeploy application on changes: java.lang.RuntimeException: [91mCompilation Failed:
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Autor.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Autor
+/home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/java/org/sfs/modelo/Libro.java:6: error: cannot find symbol
+    private ObjectId autor; // Referencia al ID del autor
+            ^
+  symbol:   class ObjectId
+  location: class org.sfs.modelo.Libro[0m
+	at io.quarkus.deployment.dev.JavaCompilationProvider.compile(JavaCompilationProvider.java:110)
+	at io.quarkus.deployment.dev.QuarkusCompiler.compile(QuarkusCompiler.java:226)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForChangedClasses(RuntimeUpdatesProcessor.java:716)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:455)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan(RuntimeUpdatesProcessor.java:437)
+	at io.quarkus.smallrye.reactivemessaging.runtime.devmode.ReactiveMessagingHotReplacementSetup$OnMessage$1.run(ReactiveMessagingHotReplacementSetup.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-24 18:34:28.221 [pool-1-thread-1] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan:532 Restarting quarkus due to changes in Libro.class, Autor.class.
+2023-09-24 18:34:28.231 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStopTime:120 sfsquarkuskafka stopped in 0.009s

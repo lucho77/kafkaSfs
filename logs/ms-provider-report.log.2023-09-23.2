@@ -1,0 +1,774 @@
+2023-09-23 23:51:06.004 [Quarkus Main Thread] WARN  null.null:-1 Unrecognized configuration key "quarkus.kafka.bootstrap.servers" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2023-09-23 23:51:06.399 [Quarkus Main Thread] INFO  io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.getKafkaProducerConfiguration:243 SRMSG18213: Setting bootstrap.servers to localhost:9092
+2023-09-23 23:51:06.509 [smallrye-kafka-producer-thread-0] INFO  io.smallrye.reactive.messaging.kafka.impl.KafkaSink.lambda$new$0:84 SRMSG18258: Kafka producer kafka-producer-sfs, connected to Kafka brokers 'localhost:9092', is configured to write records to 'sfs'
+2023-09-23 23:51:06.545 [Quarkus Main Thread] WARN  io.quarkus.kafka.streams.runtime.KafkaStreamsProducer.<init>:80 No Topology producer; Kafka Streams will not be started
+2023-09-23 23:51:06.620 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:106 sfsquarkuskafka 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.16.11.Final) started in 3.913s. Listening on: http://localhost:9331
+2023-09-23 23:51:06.621 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:109 Profile dev activated. Live Coding activated.
+2023-09-23 23:51:06.622 [Quarkus Main Thread] INFO  io.quarkus.bootstrap.runner.Timing.printStartupTime:111 Installed features: [cache, cdi, kafka-client, kafka-streams, redis-client, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, smallrye-reactive-messaging, smallrye-reactive-messaging-kafka, vertx]
+2023-09-23 23:51:06.701 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:06.764 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:06.850 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:07.039 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:07.416 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:08.267 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:09.854 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:13.682 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:20.722 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:30.517 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:40.994 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:51:51.120 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:00.752 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:12.071 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:20.181 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:29.555 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:40.980 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:52:51.640 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:01.090 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:06.696 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.700 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.KafkaSink.lambda$writeMessageToKafka$4:216 SRMSG18212: Message org.eclipse.microprofile.reactive.messaging.Message$$Lambda$1127/0x000000084071e840@7bdd4bde was not sent to Kafka topic 'sfs' - nacking message: java.lang.IllegalStateException: Retries exhausted : 1 attempts against 1695523988766/1695523986559 expiration
+	at io.smallrye.mutiny.helpers.ExponentialBackoff.lambda$randomExponentialBackoffFunctionExpireAt$2(ExponentialBackoff.java:113)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.groups.MultiOnItem.lambda$transformToUni$6(MultiOnItem.java:268)
+	at io.smallrye.mutiny.operators.multi.MultiFlatMapOp$FlatMapMainSubscriber.onItem(MultiFlatMapOp.java:178)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onNext(MultiSubscriber.java:61)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.drainWithDownstream(UnicastProcessor.java:109)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.drain(UnicastProcessor.java:140)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.onNext(UnicastProcessor.java:206)
+	at io.smallrye.mutiny.operators.multi.processors.SerializedProcessor.onNext(SerializedProcessor.java:105)
+	at io.smallrye.mutiny.subscription.SerializedSubscriber.onItem(SerializedSubscriber.java:75)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onNext(MultiSubscriber.java:61)
+	at io.smallrye.mutiny.operators.multi.MultiRetryWhenOp$RetryWhenOperator.onFailure(MultiRetryWhenOp.java:129)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onError(MultiSubscriber.java:73)
+	at io.smallrye.mutiny.converters.uni.UniToMultiPublisher$UniToMultiSubscription.onFailure(UniToMultiPublisher.java:103)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onFailure(UniOperatorProcessor.java:55)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onFailure(UniOperatorProcessor.java:55)
+	at io.smallrye.mutiny.operators.uni.builders.DefaultUniEmitter.fail(DefaultUniEmitter.java:53)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3(ReactiveKafkaProducer.java:157)
+	at org.apache.kafka.clients.producer.KafkaProducer$AppendCallbacks.onCompletion(KafkaProducer.java:1495)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:273)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:234)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeExceptionally(ProducerBatch.java:198)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:766)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:751)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:392)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.705 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.705 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.KafkaSink.lambda$writeMessageToKafka$4:216 SRMSG18212: Message org.eclipse.microprofile.reactive.messaging.Message$$Lambda$1127/0x000000084071e840@72ae523f was not sent to Kafka topic 'sfs' - nacking message: java.lang.IllegalStateException: Retries exhausted : 1 attempts against 1695523988306/1695523987540 expiration
+	at io.smallrye.mutiny.helpers.ExponentialBackoff.lambda$randomExponentialBackoffFunctionExpireAt$2(ExponentialBackoff.java:113)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.groups.MultiOnItem.lambda$transformToUni$6(MultiOnItem.java:268)
+	at io.smallrye.mutiny.operators.multi.MultiFlatMapOp$FlatMapMainSubscriber.onItem(MultiFlatMapOp.java:178)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onNext(MultiSubscriber.java:61)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.drainWithDownstream(UnicastProcessor.java:109)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.drain(UnicastProcessor.java:140)
+	at io.smallrye.mutiny.operators.multi.processors.UnicastProcessor.onNext(UnicastProcessor.java:206)
+	at io.smallrye.mutiny.operators.multi.processors.SerializedProcessor.onNext(SerializedProcessor.java:105)
+	at io.smallrye.mutiny.subscription.SerializedSubscriber.onItem(SerializedSubscriber.java:75)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onNext(MultiSubscriber.java:61)
+	at io.smallrye.mutiny.operators.multi.MultiRetryWhenOp$RetryWhenOperator.onFailure(MultiRetryWhenOp.java:129)
+	at io.smallrye.mutiny.subscription.MultiSubscriber.onError(MultiSubscriber.java:73)
+	at io.smallrye.mutiny.converters.uni.UniToMultiPublisher$UniToMultiSubscription.onFailure(UniToMultiPublisher.java:103)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onFailure(UniOperatorProcessor.java:55)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onFailure(UniOperatorProcessor.java:55)
+	at io.smallrye.mutiny.operators.uni.builders.DefaultUniEmitter.fail(DefaultUniEmitter.java:53)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3(ReactiveKafkaProducer.java:157)
+	at org.apache.kafka.clients.producer.KafkaProducer$AppendCallbacks.onCompletion(KafkaProducer.java:1495)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:273)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:234)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeExceptionally(ProducerBatch.java:198)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:766)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:751)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:392)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.706 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.708 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.709 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.710 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.711 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.711 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.712 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.713 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.713 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.714 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.715 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.715 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.716 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.717 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.718 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.718 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.719 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.719 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.720 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.721 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.721 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.721 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.722 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.722 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.723 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.723 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.723 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.724 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.724 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.725 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.725 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.725 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.726 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.726 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.727 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.727 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.727 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.728 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.728 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.729 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.729 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.729 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.730 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.730 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.730 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.731 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.731 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.732 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.732 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.733 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.733 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.733 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.734 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.734 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.734 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.735 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.735 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.736 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.736 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.736 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.737 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.737 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.737 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.738 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.738 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.739 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.739 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.739 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.740 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.740 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.740 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.741 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.741 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.742 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.742 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.742 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.743 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.743 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.743 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.744 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.744 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.744 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.745 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.745 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.745 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.746 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.746 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.746 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.747 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.747 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.748 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.748 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.748 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.749 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.749 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.749 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.750 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.750 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.750 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.751 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.751 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.752 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.752 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.752 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.753 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.753 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.753 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.754 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.754 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.754 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.755 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.755 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.755 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.756 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.756 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.756 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.757 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.757 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:06.757 [kafka-producer-network-thread | kafka-producer-sfs] ERROR io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaProducer.lambda$send$3:153 SRMSG18206: Unable to write to Kafka from channel sfs (topic: sfs): org.apache.kafka.common.errors.TimeoutException: Expiring 121 record(s) for sfs-0:120000 ms has passed since batch creation
+
+2023-09-23 23:53:11.444 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:20.859 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:28.930 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:38.972 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:47.729 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:57.330 [kafka-producer-network-thread | kafka-producer-sfs] WARN  org.apache.kafka.clients.NetworkClient.initiateConnect:997 [Producer clientId=kafka-producer-sfs] Error connecting to node broker:9092 (id: 1001 rack: null): java.net.UnknownHostException: broker: Fallo temporal en la resolución del nombre
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307)
+	at org.apache.kafka.clients.DefaultHostResolver.resolve(DefaultHostResolver.java:27)
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:510)
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:467)
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:173)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:990)
+	at org.apache.kafka.clients.NetworkClient.ready(NetworkClient.java:301)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:354)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:327)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2023-09-23 23:53:57.542 [pool-1-thread-1] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.checkForFileChange:978 File change detected: /home/luciano/desarrollo/sfs/sfsquarkuskafka/src/main/resources/application.properties
+2023-09-23 23:53:57.546 [pool-1-thread-1] INFO  io.quarkus.deployment.dev.RuntimeUpdatesProcessor.doScan:532 Restarting quarkus due to changes in application.properties.
